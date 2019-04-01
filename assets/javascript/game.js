@@ -44,72 +44,50 @@ $(document).ready(function() {
     if (totalScore === 0) $alertText.html('')
   }
 
+  // adds value of crystal to user's total score
   function addToTotal(crystal) {
     totalScore += crystal
     $totalScoreText.html(totalScore)
   }
 
-
-  $('.c1').on('click', function() {
-    wipeAlert()
-
-    totalScore += crystal_1
-    $totalScoreText.html(totalScore)
+  // checks for a win or loss
+  function checkForWin() {
     if (totalScore === targetNum) {
       $alertText.html('You win!')
+      wins++
+      $winsText.html(wins)
       reset()
     }
     if (totalScore > targetNum) {
       $alertText.html('You lose :(')
+      losses++
+      $lossesText.html(losses)
       reset()
     }
+  }
+
+
+  $('.c1').on('click', function() {
+    wipeAlert()
+    addToTotal(crystal_1)
+    checkForWin()
   })
 
   $('.c2').on('click', function() {
     wipeAlert()
-
-    totalScore += crystal_2
-    $totalScoreText.html(totalScore)
-
-    if (totalScore === targetNum) {
-      $alertText.html('You win!')
-      reset()
-    }
-    if (totalScore > targetNum) {
-      $alertText.html('You lose :(')
-      reset()
-    }
+    addToTotal(crystal_2)
+    checkForWin()
   })
 
   $('.c3').on('click', function() {
     wipeAlert()
-
-    totalScore += crystal_3
-    $totalScoreText.html(totalScore)
-
-    if (totalScore === targetNum) {
-      $alertText.html('You win!')
-      reset()
-    }
-    if (totalScore > targetNum) {
-      $alertText.html('You lose :(')
-      reset()
-    }
+    addToTotal(crystal_3)
+    checkForWin()
   })
 
   $('.c4').on('click', function() {
     wipeAlert()
-
-    totalScore += crystal_4
-    $totalScoreText.html(totalScore)
-
-    if (totalScore === targetNum) {
-      $alertText.html('You win!')
-      reset()
-    }
-    if (totalScore > targetNum) {
-      $alertText.html('You lose :(')
-      reset()
-    }
+    addToTotal(crystal_4)
+    checkForWin()
   })
 })
