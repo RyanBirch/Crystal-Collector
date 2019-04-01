@@ -12,22 +12,36 @@
   <div class="left-block">
     <h1 class="title">Crystal Collector</h1>
     <p class="instructions">
-      You will be given a random number at the start of the game. <br><br> By clicking on one of the four
+      You will be given a target number at the start of the game. <br><br> By clicking on one of the four
       crystals, you will add a specific amount of points to your total score. <br><br> You win the game
-      by matching your total score to the random number You lose the game if your total score goes above
-      the random number. <br><br> The value of each crystal is hidden from you until you click on it.
+      by matching your total score to the target number. You lose the game if your total score goes above
+      the target number. <br><br> The value of each crystal is hidden from you until you click on it.
       <br><br> Each time the game restarts, the values of each crystal will change.
     </p>
   </div>
 
-  <div class="right-block">
-    <h3>Target Number: </h3>
-    <h3 id="random-number"></h3>
 
-    <h3>Wins: </h3>
-    <h3 id="wins"></h3>
-    <h3>Losses: </h3>
-    <h3 id="losses"></h3>
+  <div class="right-block">
+
+    <div class="top-row">
+      <div class="target">
+        <h3>Target Number: </h3>
+        <h3 id="target-number"></h3>
+      </div>
+
+      <div class="record">
+        <div class="wins">
+          <h3>Wins: </h3>
+          <h3 id="wins"></h3>
+        </div>
+        <div class="losses">
+          <h3>Losses: </h3>
+          <h3 id="losses"></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="clr"></div>
 
     <div class="crystal-group">
       <img class="c1" src="assets/images/red_crystal.png" alt="crystal 1">
@@ -36,10 +50,18 @@
       <img class="c4" src="assets/images/green_crystal.png" alt="crystal 4">
     </div>
 
-    <h3>Total Score: </h3>
-    <h3 id="total-score"></h3>
+    <div class="score">
+      <h3>Total Score: </h3>
+      <h3 id="total-score"></h3>
+    </div>
+
+    <div class="alert">
+      <h1 id="alert"></h1>
+    </div>
+
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/javascript/game.js"></script>
 </body>
 </html>

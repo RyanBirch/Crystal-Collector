@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.clr {
+  clear: both;
+}
+
 .title {
   text-align: center;
 }
@@ -13,9 +17,32 @@
   line-height: 2em;
 }
 
+.top-row {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.target {
+  display: inline-block;
+  float: left;
+  width: 40%;
+}
+
+.record {
+  display: inline-block;
+  float: left;
+  width: 60%;
+}
+
+.wins, .losses {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
 .crystal-group {
   width: 100%;
-  margin: 0 auto 0 auto
+  margin: 2em auto 0 auto;
 }
 
 .c1, .c2, .c3, .c4 {
@@ -23,6 +50,11 @@
   height: auto;
   margin: 1em 2.5em 1em 2.5em;
   cursor: pointer;
+}
+
+.score {
+  margin-top: 3em;
+  font-size: 1.5em;
 }
 
 .left-block {
