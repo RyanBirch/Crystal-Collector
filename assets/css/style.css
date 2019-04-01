@@ -7,19 +7,32 @@
 }
 
 .instructions {
-  width: 50%;
+  width: 80%;
   margin: 0 auto 0 auto;
   text-align: left;
   line-height: 2em;
 }
 
-#crystals {
-  width: 80%;
+.crystal-group {
+  width: 100%;
   margin: 0 auto 0 auto
 }
 
 .c1, .c2, .c3, .c4 {
-  width: 15%;
+  width: 12%;
   height: auto;
-  margin: 2.5em; 
+  margin: 1em 2.5em 1em 2.5em;
+  cursor: pointer;
+}
+
+.left-block {
+  display: inline-block;
+  float: left;
+  width: 40vw;
+}
+
+.right-block {
+  display: inline-block;
+  float: left;
+  width: 55vw;
 }
