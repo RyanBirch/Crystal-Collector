@@ -4,9 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Crystal Collector</title>
 </head>
 <body>
+
+  <h1 class="title">Crystal Collector</h1>
+  <p class="instructions">You will be given a random number at the start of the game. <br><br> There are
+    four crystals below. By clicking on a crystal, you will add a specific amount of points to your total
+    score. <br><br> You win the game by matching your total score to the random number You lose the game
+    if your total score goes above the random number. <br><br> The value of each crystal is hidden from you
+    until you click on it. <br><br> Each time the game restarts, the values of each crystal will change.</p>
+
+  <div id="random-number"></div>
+  <div id="record"></div>
+
+  <div id="crystals">
+    <img class="c1" src="assets/images/red_crystal.png" alt="crystal 1">
+    <img class="c2" src="assets/images/blue_crystal.jpeg" alt="crystal 2">
+    <img class="c3" src="assets/images/yellow_crystal.png" alt="crystal 3">
+    <img class="c4" src="assets/images/green_crystal.png" alt="crystal 4">
+  </div>
+
+  <div id="total-score"></div>
 
 </body>
 </html>
