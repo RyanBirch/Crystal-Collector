@@ -29,7 +29,12 @@ html::after {
 
 .title {
   text-align: center;
-  font-family: 'Press Start 2p', serif;;
+  font-family: 'Press Start 2p', serif;
+  color: #bee4f2;
+  background-color: #292929;
+  width: 80%;
+  padding: 0.5em;
+  margin-left: 1.25em;
 }
 
 .instructions {
