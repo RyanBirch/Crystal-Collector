@@ -6,8 +6,30 @@
   clear: both;
 }
 
+body {
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+  display: block;
+}
+
+html::after {
+  content: "";
+  background-image: url('../images/background.jpg');
+  background-repeat: repeat;
+  background-position: center;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 .title {
   text-align: center;
+  font-family: 'Press Start 2p', serif;;
 }
 
 .instructions {
@@ -15,6 +37,7 @@
   margin: 0 auto 0 auto;
   text-align: left;
   line-height: 2em;
+  font-family: 'Germania One', cursive;
 }
 
 .top-row {
@@ -52,8 +75,22 @@
   cursor: pointer;
 }
 
-.score {
+.bottom-row {
   margin-top: 3em;
+  position: relative;
+}
+
+.score {
+  font-size: 1.5em;
+  display: inline-block;
+  float: left;
+}
+
+.alert {
+  display: inline-block;
+  float: right;
+  position: absolute;
+  right: 6em;
   font-size: 1.5em;
 }
 
@@ -67,4 +104,6 @@
   display: inline-block;
   float: left;
   width: 55vw;
+  font-family: 'Abril Fatface';
+  font-size: 1em;
 }
