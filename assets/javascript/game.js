@@ -66,7 +66,6 @@ $(document).ready(function() {
     }
   }
 
-
   $('.c1').on('click', function() {
     wipeAlert()
     addToTotal(crystal_1)
