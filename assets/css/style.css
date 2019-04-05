@@ -1,10 +1,6 @@
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-.clr {
-  clear: both;
-}
+.clr { clear: both; }
 
 html {
   min-height: 100vh;
@@ -116,12 +112,23 @@ html::after {
 }
 
 @media only screen and (max-width: 765px) {
-  .title {
-    font-size: 5vw;
+  .title { font-size: 5vw; }
+
+  .alert { margin-right: 15%; }
+
+  .top-row {
+    display: flex;
+    flex-direction: column;
   }
 
-  .alert {
-    margin-right: 15%;
+  .record {
+    order: 1;
+    width: 100%;
+  }
+
+  .target {
+    order: 2;
+    width: 100%;
   }
 
   .left-block {
@@ -136,5 +143,33 @@ html::after {
     display: block;
     width: 100vw;
     margin-left: 8%;
+    font-size: 2.5vw;
   }
+
+  .c1, .c2, .c3, .c4 {
+    width: 14%;
+    height: auto;
+    margin: 1em 1.25em;
+  }
+
+  .crystal-group { margin-top: 0; }
+
+  .bottom-row { margin-top: 0; }
+
+  .alert {
+    font-size: 3vw;
+    margin-right: 1em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .right-block { font-size: 3.5vw; }
+
+  .c1, .c2, .c3, .c4 {
+    width: 15%;
+    height: auto;
+    margin: 2em 3em;
+  }
+
+  .alert { font-size: 3.5vw; }
 }
