@@ -97,6 +97,10 @@ html::after {
   font-size: 1.5em;
 }
 
+#win-alert { color: #40e026; }
+
+#loss-alert { color: #fe1414; }
+
 .left-block {
   display: inline-block;
   float: left;

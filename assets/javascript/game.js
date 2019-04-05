@@ -4,7 +4,8 @@ $(document).ready(function() {
       $winsText = $('#wins'),
       $lossesText = $('#losses'),
       $totalScoreText = $('#total-score')
-      $alertText = $('#alert')
+      $winAlert = $('#win-alert')
+      $lossAlert = $('#loss-alert')
 
 
   // initial game state
@@ -41,7 +42,10 @@ $(document).ready(function() {
 
   // resets the alert at the beginning of a new game
   function wipeAlert() {
-    if (totalScore === 0) $alertText.html('')
+    if (totalScore === 0) {
+      $winAlert.html('')
+      $lossAlert.html('')
+    }
   }
 
   // adds value of crystal to user's total score
@@ -53,13 +57,13 @@ $(document).ready(function() {
   // checks for a win or loss
   function checkForWin() {
     if (totalScore === targetNum) {
-      $alertText.html('You win!')
+      $winAlert.html('You win!')
       wins++
       $winsText.html(wins)
       reset()
     }
     if (totalScore > targetNum) {
-      $alertText.html('You lose :(')
+      $lossAlert.html('You lose :(')
       losses++
       $lossesText.html(losses)
       reset()
